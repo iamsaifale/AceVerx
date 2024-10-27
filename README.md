@@ -18,8 +18,7 @@ git clone https://github.com/iamsaifale/AceVerX.git
 cd AceVerX
 
 🌍 Live Demo
-
-Check out the live version of AceVerX: 
+Check out the live version of AceVerX:  https://aceverx.vercel.app/
 🤝 Contributing
 
 Contributions are welcome! If you’d like to improve AceVerX, please feel free to fork the repository, create a new branch, and submit a pull request.
