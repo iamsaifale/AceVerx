@@ -3,15 +3,15 @@ AceVerX 🌐
 AceVerX is a local language translation application, bridging the gap between cultures through effective and accessible translations. Built using JavaScript, HTML, Tailwind CSS, GSAP, and Locomotive Scroll, AceVerX provides support for multiple languages, making it a versatile tool for users worldwide.
 🔑 Features
 
-    Multi-language Translation: Supports languages like Pashto, Punjabi, Gujarati, Hindi, and more, helping users access content in their preferred languages.
-    Interactive User Experience: Enhanced animations and smooth scrolling for an engaging experience.
-    Cultural Representation: Promotes cultural diversity by incorporating local languages.
+Multi-language Translation: Supports languages like Pashto, Punjabi, Gujarati, Hindi, and more, helping users access content in their preferred languages.
+Interactive User Experience: Enhanced animations and smooth scrolling for an engaging experience.
+Cultural Representation: Promotes cultural diversity by incorporating local languages.
 
 🛠️ Technologies Used
 
-    JavaScript: Core functionality and language processing.
-    HTML & Tailwind CSS: Markup and styling for responsive, user-friendly design.
-    GSAP & Locomotive Scroll: Animations and smooth scrolling effects.
+JavaScript: Core functionality and language processing.
+HTML & Tailwind CSS: Markup and styling for responsive, user-friendly design.
+GSAP & Locomotive Scroll: Animations and smooth scrolling effects.
 
 🚀 Getting Started
 git clone https://github.com/iamsaifale/AceVerX.git
