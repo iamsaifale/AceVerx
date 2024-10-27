@@ -1,4 +1,4 @@
-AceVerX 🌐
+AceVerX Translation App 🌐
 
 AceVerX is a local language translation application, bridging the gap between cultures through effective and accessible translations. Built using JavaScript, HTML, Tailwind CSS, GSAP, and Locomotive Scroll, AceVerX provides support for multiple languages, making it a versatile tool for users worldwide.
 
