@@ -1,0 +1,246 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    color: #ffff;
+  }
+  
+  /* First Section - Vibrating Text */
+  .hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+  }
+  
+  .vibrating-text {
+    font-size: 6rem;
+    animation: vibrate 0.1s infinite;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 3rem;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
+  @keyframes vibrate {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(2px, 2px); }
+    50% { transform: translate(-2px, -2px); }
+    75% { transform: translate(2px, -2px); }
+    100% { transform: translate(0, 0); }
+  }
+  .soical-icons
+  {
+    height: 10vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+ .soical-icons a
+{
+    margin: 2rem;
+    font-size: 2rem;
+    color: #ffff;
+}
+.arrow-down
+{
+  height: 5vh;
+  width: 100vh;
+  margin-top: 2rem;
+   transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+.arrow-down i
+{
+  font-size: 2.7rem;
+
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a102f;
+}
+
+.contact-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    padding: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img {
+    width: 27rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.contact-form {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: blueviolet;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 90%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+    border-color: #a59de4;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+.submit-btn button {
+    background-color:blueviolet;
+    color: #fff;
+    padding: 1rem  3rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn button:hover {
+    background-color:   #1a102f;
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+
+  .contact-container {
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 17rem;
+    width: 100%;
+
+}
+  
+.contact-image {
+      display: none;
+}
+
+.contact-form h2 {
+  color: rgb(255, 255, 255);
+}
+  .hero-section {
+    width: 100%;
+  }
+  .vibrating-text {
+    font-size: 3rem;
+  }
+  .hero-description {
+   display: none;
+  }
+  .contact-container {
+      flex-direction: column;
+      padding: 30px;
+  }
+
+  .contact-form {
+      padding-left: 0;
+  }
+
+  .contact-image {
+      margin-bottom: 20px;
+  }
+
+  .contact-image img {
+      width: 120px;
+      height: 120px;
+  }
+
+  .contact-form h2 {
+      font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+      padding: 20px;
+  }
+
+  .contact-form h2 {
+      font-size: 20px;
+  }
+
+  .submit-btn button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+
+  

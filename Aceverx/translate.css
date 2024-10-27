@@ -1,0 +1,571 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.loader
+{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #020b11;;
+    z-index: 9999;
+    top: 0;
+    transition: all  1s ease;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; 
+}
+#hone {
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    font-size: 4.5rem;
+    background: linear-gradient(to right,rgb(243, 232, 221),blueviolet);
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    margin-top: 20rem;
+}
+#two {
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    font-size: 4.5rem;
+    background: linear-gradient(to right, rgb(136, 1, 255), rgb(239, 233, 255));
+    -webkit-background-clip: text;
+    display: none;
+}
+.spinner {
+    background-image: url("2logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    animation: spin 2s linear infinite;
+    margin-top: 20rem;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 768px) {
+    #hone {
+        font-size: 3rem;
+    }
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    height: 4rem; 
+    width: 100%;
+    background-color: rgb(243, 232, 221);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.menu-icon
+{
+    padding: 1.2rem 2rem;
+    font-size: x-large;
+}
+.logo
+{
+    height: 100%;
+    width: 10vw;
+    background-image: url("aceverx.png");
+    background-position: center;
+    background-size: 14rem;
+    background-repeat: no-repeat;
+    margin-top: 0.5rem;
+}
+.heading
+{
+    width: 100%;
+    height: 4rem;
+    border-bottom: 0.1px solid rgb(171, 166, 166);
+}
+.heading span
+{
+    font-size: 37px;
+    color: white;
+    margin-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.menu-box {
+    height: 100vh;
+    width: 16vw;
+    background-color: #1a102f;
+    position: fixed;
+    top:0;
+    left: -100%;
+    z-index: 1000;
+    transition: left 0.3s ease; 
+}
+
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+.menu-box ul li a {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;  
+    color: white;
+    text-decoration: none; 
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #c0c0c0; 
+    font-size: 18px;
+    cursor: pointer;
+}
+.menu-item i {
+    font-size: 25px; 
+    margin-right: 15px; 
+}
+.menu-item span {
+    flex-grow: 1;
+}
+.menu-item:hover {
+    background-color:  blueviolet;
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.close
+{
+    height: 2rem;
+    width: 3rem;
+    margin-left: auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close i{
+    font-size: x-large;
+    color: white;
+}
+.main-box
+{
+    height: 43vh;
+    width: 100%;
+    background-color: #1a102f;
+}
+.Text-area
+{
+    height: 10.5rem;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+    gap: 1rem;
+
+}
+.from-text{
+    height: 10rem;
+    width: 37rem;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.to-text{
+    height: 10rem;
+    width: 37rem;
+    border: 0.3px solid rgb(143, 140, 140);
+    padding-left: 1rem;
+    font-size: xx-large;
+    padding-top: 0.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.options-1, .options-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 3rem
+}
+
+.volume i, .copy-icon i {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+.micro-ph {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+.english-btn select, .urdu-btn select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.arrow-icon i {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    top: 3rem;
+    color: white;
+}
+
+.select-box select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-width="2" d="M6 9l6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+select {
+    width: 120px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+i.fa-volume-high, i.fa-copy {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.container .arrow-icon {
+    margin: 0 15px;
+}
+
+.head
+{
+    height: 30vh;
+    width: 100%;
+    background-color: #1a102f;
+    display: flex;
+    justify-content: center;
+}
+
+#heading1
+{
+     color: white;
+     position: relative;
+     top: 3rem;
+     font-size: 4rem;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+}
+
+.pic {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.inner-pic
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("trnaspic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+  .box-head2{
+    height: 30vh;
+    background-color: #1a102f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mid span {
+    color: white;
+  }
+
+  #mid {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  /* Container Styling */
+.container2 {
+    text-align: center;
+    height: 75vh;
+    background-color: #1a102f;
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem;
+  }
+  
+  .media-section {
+    width: 50%;
+  }
+  
+  .media {
+    position: relative;
+  }
+  
+  .media video {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .text-section {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    padding: 5rem 6rem;
+  }
+  
+  .text-section h2 {
+    font-size: 2.7rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .text-section p {
+    color: #a3a3a3;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .text-section button {
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .text-section button:hover {
+    background-color: #202020;
+  }
+
+   /* translate click btn  */
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a102f;
+}
+
+/* Button styling */
+.translate-btn {
+    background-color: blueviolet; 
+    color: white;
+    border: none; 
+    padding: 15px 30px; 
+    font-size: 16px; 
+    border-radius: 10px;
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; 
+}
+
+.translate-btn:hover {
+background-color: #3b62d1; 
+}
+/* translate click btn  */
+  
+
+   /* COPY RIGHT */
+.copy-right{
+    height:10vh ;
+    width: 100%;
+    background-color: #1a102f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1px solid #2e2e2e;
+   padding-right: 0.2rem;
+}
+.copy-right p{
+   color:white ;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ /* COPY RIGHT */
+
+
+
+/* 
+
+@media (max-width: 480px) {
+    .pic {
+        height: 20vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .pic {
+        height: 20vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    .logo
+{
+    width: 37vw;
+    margin: 0;
+    margin: 2rem;
+}
+.menu-box {
+    height: 100vh;
+    width: 30vh;
+}
+/* .container {
+    flex-direction: column;
+} */
+
+.container {
+    justify-content: center; 
+}
+
+.english-btn select, .urdu-btn select {
+    width: 89px; 
+}
+
+.arrow-icon, .volume, .micro-ph {
+    padding: 0 3px; /* Smaller padding on icons for mobile */
+}
+.options-1, .options-2 {
+    gap: 20px;
+}
+.volume
+{
+    position: relative;
+    left: 8px;
+}
+.arrow-icon
+{
+    position: relative;
+    left: 8px;
+}
+
+.container {
+    gap: 0rem;
+}
+.main-box
+{
+    height: 65vh;
+}
+.content {
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.media-section, .text-section {
+    width: 100%;
+    padding: 1rem;
+}
+.Text-area
+{
+    flex-wrap: wrap;
+}
+.copy-icon
+{
+    display: none;
+}
+.box-head2
+{
+    display: none;
+}
+
+#heading1
+{
+     font-size: 2.4rem;
+     position: relative;
+     top: 5rem;
+}
+
+.pic {
+    display: none;
+}
+.text-section
+{
+    padding: 1px;
+}
+.text-section h2
+{
+    font-size: 2rem;
+}
+.container2 {
+    height: 80vh;
+  }
+  .head
+{
+    display: none;
+}
+.content {
+    position: relative;
+    top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px)
+{
+
+    .container2 {
+        height: 100vh;
+      }
+      #heading1
+{
+     font-size: 2.4rem;
+}
+.head
+{
+    height: 6rem;
+}
+}
+
